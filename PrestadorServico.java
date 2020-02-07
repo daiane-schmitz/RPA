@@ -1,19 +1,18 @@
 package CobrancaRPA;
 
-public abstract class PrestadorServico {
+public class PrestadorServico {
 
 	private String nomeCompleto;
 	private String endereco;
 	private String cpf;
 	private String matriculaINSS;
-	
 	protected double valorServico;
 	protected double valorPagamento;
 
 	public PrestadorServico() {
 		
 	}
-
+	
 	public PrestadorServico(String nomeCompleto, String endereco, String cpf, String matriculaINSS, double valorServico,
 			double valorPagamento) {
 		super();

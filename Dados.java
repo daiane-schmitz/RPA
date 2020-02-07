@@ -4,28 +4,21 @@ public abstract class Dados extends PrestadorServico{
 
 	private double valorIR;
 	protected double valorPagamento;
-	private double parcelaIR;
-	private double aliquotaIR;
 	private double valorINSS;
-	private double aliquotaINSS;
 	protected double valorLiquido;
 	private PrestadorServico prestador;
-	
 	
 	public Dados() {
 		
 	}
 
 
-	public Dados(double valorIR, double valorPagamento, double parcelaIR, double aliquotaIR, double valorINSS,
+	public Dados(double valorIR, double valorPagamento, double parcelaIR, double valorINSS,
 			double aliquotaINSS, double valorLiquido, PrestadorServico prestador) {
 		super();
 		this.valorIR = valorIR;
 		this.valorPagamento = valorPagamento;
-		this.parcelaIR = parcelaIR;
-		this.aliquotaIR = aliquotaIR;
 		this.valorINSS = valorINSS;
-		this.aliquotaINSS = aliquotaINSS;
 		this.valorLiquido = valorLiquido;
 		this.prestador = prestador;
 	}
@@ -51,26 +44,6 @@ public abstract class Dados extends PrestadorServico{
 	}
 
 
-	public double getParcelaIR() {
-		return parcelaIR;
-	}
-
-
-	public void setParcelaIR(double parcelaIR) {
-		this.parcelaIR = parcelaIR;
-	}
-
-
-	public double getAliquotaIR() {
-		return aliquotaIR;
-	}
-
-
-	public void setAliquotaIR(double aliquotaIR) {
-		this.aliquotaIR = aliquotaIR;
-	}
-
-
 	public double getValorINSS() {
 		return valorINSS;
 	}
@@ -80,15 +53,6 @@ public abstract class Dados extends PrestadorServico{
 		this.valorINSS = valorINSS;
 	}
 
-
-	public double getAliquotaINSS() {
-		return aliquotaINSS;
-	}
-
-
-	public void setAliquotaINSS(double aliquotaINSS) {
-		this.aliquotaINSS = aliquotaINSS;
-	}
 
 
 	public double getValorLiquido() {
@@ -113,9 +77,7 @@ public abstract class Dados extends PrestadorServico{
 
 	@Override
 	public String toString() {
-		return "Dados [valorIR=" + valorIR + ", valorPagamento=" + valorPagamento + ", parcelaIR=" + parcelaIR
-				+ ", aliquotaIR=" + aliquotaIR + ", valorINSS=" + valorINSS + ", aliquotaINSS=" + aliquotaINSS
-				+ ", valorLiquido=" + valorLiquido + ", prestador=" + prestador + "]";
+		return "Dados [valorIR=" + valorIR + ", valorPagamento=" + valorPagamento + ", valorINSS=" + valorINSS + ", valorLiquido=" + valorLiquido + ", prestador=" + prestador + "]";
 	}
 	
 }
